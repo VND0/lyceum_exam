@@ -1,10 +1,9 @@
 num = int(input())
-power = 0
+powered = 1
+while powered < num:
+    powered *= 2
 
-while 2 ** power < num:
-    power += 1
-
-if 2 ** power == num:
+if num == powered:
     print("Yes")
 else:
     print("No")
